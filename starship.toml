@@ -27,6 +27,7 @@ $shell\
 $container\
 $jobs\
 $memory_usage\
+$battery\
 $time\
 $cmd_duration\
 $status\
@@ -40,6 +41,7 @@ palette = 'default'
 
 color_ok = 'bright-green'
 color_danger = 'bright-red'
+color_caution = 'bright-yellow'
 
 color_os = 'red'
 color_username = 'red'
@@ -65,6 +67,7 @@ color_vimcmd_visual = 'yellow'
 
 color_ok = '#b8bb26'
 color_danger = '#fb4934'
+color_caution = '#d79921'
 
 color_os = '#d65d0e'
 color_username = '#d65d0e'
@@ -90,6 +93,7 @@ color_vimcmd_visual = '#d79921'
 
 color_ok = '#79740e'
 color_danger = '#9d0006'
+color_caution = '#d79921'
 
 color_os = '#d65d0e'
 color_username = '#d65d0e'
@@ -310,6 +314,23 @@ threshold = 90
 symbol = "󰓅"
 style = "fg:color_memory"
 format = '[ $symbol( ${ram}) ]($style)'
+
+[battery]
+full_symbol = "󰁹"
+charging_symbol = "󰂄"
+discharging_symbol = "󰂃"
+unknown_symbol = "󰂑"
+empty_symbol = "󰂎"
+format = '[ $symbol( $percentage) ]($style)'
+disabled = false
+
+[[battery.display]]
+threshold = 10
+style = "bold fg:color_danger"
+
+[[battery.display]]
+threshold = 20
+style = "fg:color_caution"
 
 [time]
 disabled = false
