@@ -20,6 +20,7 @@ $java\
 $kotlin\
 $haskell\
 $python\
+$package\
 $docker_context\
 $kubernetes\
 $shell\
@@ -249,6 +250,12 @@ format = '[( $symbol( $version) )]($style)'
 symbol = ""
 style = "fg:color_env"
 format = '[( $symbol( $version)( $virtualenv) )]($style)'
+
+[package]
+disabled = false
+symbol = "󰏗"
+style = "fg:color_env"
+format = '[( $symbol( $version) )]($style)'
 
 [docker_context]
 symbol = ""
