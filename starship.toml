@@ -26,6 +26,7 @@ $kubernetes\
 $shell\
 $container\
 $jobs\
+$memory_usage\
 $time\
 $cmd_duration\
 $status\
@@ -52,6 +53,7 @@ color_docker = 'blue'
 color_shell = ''
 color_container = ''
 color_jobs = ''
+color_memory = ''
 color_time = ''
 color_duration = ''
 
@@ -76,6 +78,7 @@ color_docker = '#458588'
 color_shell = '#a89984'
 color_container = '#cc241d'
 color_jobs = '#d5c4a1'
+color_memory = '#d5c4a1'
 color_time = '#d5c4a1'
 color_duration = '#fbf1c7'
 
@@ -100,6 +103,7 @@ color_docker = '#458588'
 color_shell = '#7c6f64'
 color_container = '#cc241d'
 color_jobs = '#504945'
+color_memory = '#504945'
 color_time = '#504945'
 color_duration = '#282828'
 
@@ -299,6 +303,13 @@ style = "fg:color_jobs"
 format = '[ $symbol( $number) ]($style)'
 symbol_threshold = 1
 number_threshold = 1
+
+[memory_usage]
+disabled = false
+threshold = 90
+symbol = "󰓅"
+style = "fg:color_memory"
+format = '[ $symbol( ${ram}) ]($style)'
 
 [time]
 disabled = false
