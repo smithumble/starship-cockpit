@@ -310,7 +310,7 @@ number_threshold = 1
 
 [memory_usage]
 disabled = false
-threshold = 90
+threshold = 95
 symbol = "󰓅"
 style = "fg:color_memory"
 format = '[ $symbol( ${ram}) ]($style)'
