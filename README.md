@@ -36,7 +36,7 @@ palette = "default"
 ```
 
 > [!IMPORTANT]
-> The default palette uses standard terminal colors, ensuring it blends with your terminal color scheme. In the image you can see the [Catppuccin Frappé](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/catppuccin-frappe.itermcolors) iTerm2 color scheme.
+> The default palette uses standard terminal colors, ensuring it blends with your terminal color scheme. In the image you can see the [Catppuccin Mocha](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/catppuccin-mocha.itermcolors) iTerm2 color scheme.
 
 ### Gruvbox Dark
 

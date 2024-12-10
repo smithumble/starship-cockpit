@@ -22,12 +22,12 @@ actions = [
     },
     {
         "type": "command",
-        "command": r"echo -e '\033]50;SetProfile=Cockpit-Catppuccin-Frappe\007'",
+        "command": r"echo -e '\033]50;SetProfile=Cockpit-Gruvbox-Dark\007'",
         "delay_after": 1/2,
     },
     {
         "type": "set_palette",
-        "palette": "default",
+        "palette": "gruvbox_dark",
         "delay_after": 1,
     },
     {
@@ -86,6 +86,21 @@ actions = [
         "type": "set_iterm_window_size",
         "columns": 125,
         "rows": 5,
+        "delay_after": 1/2,
+    },
+    {
+        "type": "command",
+        "command": r"echo -e '\033]50;SetProfile=Cockpit-Catppuccin-Mocha\007'",
+        "delay_after": 1/2,
+    },
+    {
+        "type": "set_palette",
+        "palette": "default",
+        "delay_after": 1,
+    },
+    {
+        "type": "command",
+        "command": r"echo -e '\033]0;Starship Cockpit Demo\007'",
         "delay_after": 1/2,
     },
     {
